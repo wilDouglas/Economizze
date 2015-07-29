@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/MeuAppActionBar</item>
+    </style>
+
+    <style name="MeuAppActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/MeuApp.TitleTextStyle</item>
+        <item name="background">@color/verde</item>
+    </style>
+
+    <style name="MeuApp.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/branco_acinzentado</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextStyleHome">
+        <item name="android:textSize">17dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/adicionar"
+        android:title="@string/adicionar"
+        android:icon="@drawable/ic_action_expand"
+        app:showAsAction="ifRoom" >
+        <menu>
+            <item android:id="@+id/add_receita"
+                android:title="@string/adicionar_receita"
+                android:icon="@drawable/ic_receita"
+                />
+            <item android:id="@+id/add_despesa"
+                android:title="@string/adicionar_despesa"
+                android:icon="@drawable/ic_despesa"
+                />
+        </menu>
+        </item>
+</menu>

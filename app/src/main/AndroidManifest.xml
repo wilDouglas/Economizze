@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.williamsilva.economizze" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.DespesaActivity"
+            android:label="@string/adicionar_despesa" >
+        </activity>
+        <activity
+            android:name=".view.ReceitaActivity"
+            android:label="@string/adicionar_receita" >
+        </activity>
+
+        <receiver android:name=".controller.broadcastReceivers.MainReceiver" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".controller.services.MainService" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="MAIN_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.DespesaVencidaActivity"
+            android:label="@string/title_activity_despesa_vencida" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.williamsilva.economizze.view.fragments.FinancasFragments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_piscina"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/voltarMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_previous_item"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="15sp"/>
+        <TextView
+            android:id="@+id/historicoFinancas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dezembro de 2014"
+            android:textColor="@color/branco_acinzentado"
+            android:textSize="20sp"
+            android:layout_marginTop="14sp"
+            />
+        <TextView
+            android:id="@+id/avancarMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_action_next_item"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="15sp"/>
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/branco_acinzentado"
+       android:layout_marginTop="15sp">
+
+        <TextView
+            android:id="@+id/title_saldo_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Meu Saldo Total:"
+            style="@style/TextStyleHome"
+            />
+
+        <TextView
+            android:id="@+id/saldoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20sp"
+            android:layout_toLeftOf="@+id/title_saldo_total"
+            android:layout_alignTop="@+id/title_saldo_total"
+            android:layout_alignParentRight="true"
+            style="@style/TextStyleHome"
+            android:textColor="@color/verde"
+            />
+        <TextView
+            android:id="@+id/title_total_despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_saldo_total"
+            android:layout_alignLeft="@+id/title_saldo_total"
+            android:layout_marginBottom="20sp"
+            android:text="Total de Despesas:"
+            style="@style/TextStyleHome"
+
+            />
+        <TextView
+            android:id="@+id/totalDespesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/saldoTotal"
+            android:layout_toLeftOf="@+id/title_total_despesa"
+            android:layout_alignTop="@+id/title_total_despesa"
+            android:layout_marginRight="20sp"
+            style="@style/TextStyleHome"
+            android:textColor="@color/vermelho"
+            />
+        <TextView
+            android:id="@+id/title_despesas_pagas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_total_despesa"
+            android:layout_alignLeft="@+id/title_total_despesa"
+            android:text="Despesas Pagas:"
+            android:layout_marginBottom="20sp"
+            style="@style/TextStyleHome"
+            />
+        <TextView
+            android:id="@+id/despesasPagas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/totalDespesa"
+            android:layout_toLeftOf="@+id/title_despesas_pagas"
+            android:layout_alignTop="@+id/title_despesas_pagas"
+            android:layout_marginRight="20sp"
+            style="@style/TextStyleHome"
+            android:textColor="@color/verde"/>
+
+        <TextView
+            android:id="@+id/title_despesas_a_pagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_despesas_pagas"
+            android:layout_alignLeft="@+id/title_despesas_pagas"
+            android:layout_marginBottom="20sp"
+            android:text="Despesas à Pagar:"
+            style="@style/TextStyleHome"
+            />
+        <TextView
+            android:id="@+id/despesaAPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/title_despesas_a_pagar"
+            android:layout_alignTop="@+id/title_despesas_a_pagar"
+            android:layout_marginRight="20sp"
+            android:layout_below="@id/despesasPagas"
+            style="@style/TextStyleHome"
+            android:textColor="@color/amarelo"/>
+        <TextView
+            android:id="@+id/title_saldo_atual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_despesas_a_pagar"
+            android:layout_alignLeft="@+id/title_despesas_a_pagar"
+            android:layout_marginBottom="20sp"
+            android:text="Meu Saldo Atual:"
+            style="@style/TextStyleHome"
+            />
+        <TextView
+            android:id="@+id/saldoAtual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/despesaAPagar"
+            android:layout_toLeftOf="@+id/title_saldo_atual"
+            android:layout_alignTop="@+id/title_saldo_atual"
+            android:layout_marginRight="20sp"
+            style="@style/TextStyleHome"
+            android:textColor="@color/verde"
+            />
+
+   </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Economizze</string>
+    <string name="minhas_receitas">Minhas Receitas</string>
+    <string name="minhas_despesas">Minhas Despesas</string>
+    <string name="relatorio_mes">Relatório Mensal</string>
+    <string name="financas_do_mes">Finanças do Mês</string>
+    <string name="conifgs">Configurações</string>
+    <string name="title_inicio">Início</string>
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
+    <string name="minhas_financas">Minhas Finanças</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="receita">Receita</string>
+    <string name="despesa">Despesa</string>
+    <string name="title_activity_despesa">Despesa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="adicionar_despesa">Adicionar Despesa</string>
+    <string name="adicionar_receita">Adicionar Receita</string>
+    <string name="receita_fixa">Receita Fixa</string>
+    <string name="valor_despesa">Valor da Despesa:</string>
+    <string name="selecione_data">Selecione a Data:</string>
+    <string name="salvar">Salvar</string>
+    <string name="nome_da_receita">Nome da Receita:</string>
+    <string name="valor_receita">Valor da Receita:</string>
+    <string name="despesa_fixa">Despesa Fixa</string>
+    <string name="nome_da_despesa">Nome da Despesa:</string>
+    <string name="despesa_paga">Pago</string>
+    <string name="despesa_nao_paga">à Pagar</string>
+    <string name="status">Status:</string>
+    <string name="alterar_despesa">Alterar Despesa</string>
+    <string name="alterar">Alterar</string>
+    <string name="alterar_receita">Alterar Receita</string>
+
+    <string name="janeiro">Janeiro</string>
+    <string name="fevereiro">Fevereiro</string>
+    <string name="março">Março</string>
+    <string name="abril">Abril</string>
+    <string name="maio">Maio</string>
+    <string name="junho">Junho</string>
+    <string name="julho">Julho</string>
+    <string name="agosto">Agosto</string>
+    <string name="setembro">Setembro</string>
+    <string name="outubro">Outubro</string>
+    <string name="novembro">Novembro</string>
+    <string name="dezembro">Dezembro</string>
+    <string name="title_activity_despesa_vencida">Despesas em Atraso</string>
+    <string name="despesas_em_atraso">Despesas em Atraso</string>
+    <string name="efetuar_pagamento">Efetuar Pagamento</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+</resources>

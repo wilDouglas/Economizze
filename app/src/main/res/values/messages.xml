@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="salvo_com_sucesso">Salvo com Sucesso !</string>
+    <string name="erro_valor_nao_digitado">Favor inserir um valor !</string>
+    <string name="erro_nome_nao_digitado">Favor inserir um nome !</string>
+    <string name="valor_max20_string">Favor digitar no máximo 20 caracteres</string>
+    <string name="excluido_com_sucesso">Excluido com sucesso !</string>
+    <string name="erro_sistema">Ops! \n Sistema gerou um erro. Favor reinicializar o aplicativo!</string>
+    <string name="alterado_com_sucesso">Alterado com Sucesso !</string>
+    <string name="nome_existente">Este nome já existe !</string>
+    <string name="saldoInsuficiente">Favor verificar. Seu saldo é Insuficiente para esta transação !</string>
+    <string name="efetou_pagamento">Você já efetuou o pagamento desta despesa?</string>
+</resources>

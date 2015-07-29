@@ -1,0 +1,123 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:genius="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.williamsilva.economizze.view.DespesaActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/branco_acinzentado"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/branco_acinzentado">
+
+        <TextView
+            android:id="@+id/txtNomeDespesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="@string/nome_da_despesa"
+            />
+        <EditText
+            android:id="@+id/nomeDespesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_despesa"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            />
+        <EditText
+            android:id="@+id/valorDespesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:numeric="decimal"/>
+        <CheckBox
+            android:id="@+id/despesaFixa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/despesa_fixa"
+            android:layout_margin="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="@string/status"/>
+            <RadioGroup
+                android:id="@+id/statusDespesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20sp"
+                >
+                <RadioButton
+                    android:id="@+id/despesaPaga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="55sp"
+                    android:text="@string/despesa_paga"/>
+                <RadioButton
+                    android:id="@+id/despesaNaoPaga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/despesa_nao_paga"
+                    />
+            </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/selecione_data"/>
+
+        <TextView
+            android:id="@+id/dataDespesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:textSize="18sp"
+            android:layout_marginBottom="22sp"
+            android:background="@color/branco"
+
+            />
+
+        <net.qiujuer.genius.widget.GeniusButton
+            android:id="@+id/salvarDespesa"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginLeft="60sp"
+            android:text="@string/salvar"
+            android:onClick="salvarDespesa"
+            genius:g_delayClick="true"
+            android:background="@color/verde"
+            genius:g_touchEffect="press"
+            genius:g_cornerRadii_A="5dp"
+            genius:g_cornerRadii_B="5dp"
+            genius:g_cornerRadii_C="5dp"
+            genius:g_cornerRadii_D="5dp"
+            genius:g_touchEffectColor="@color/verde_basico"
+            genius:g_blockButtonEffectHeight="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lista_receita"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_new"
+        fab:fab_colorNormal="@color/verde_escuro"
+        fab:fab_colorPressed="@color/verde_basico"
+        fab:fab_colorRipple="@color/verde" />
+</FrameLayout>

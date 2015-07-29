@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textSize="20sp"
+        android:text="Blusa Ralf Lauren"/>
+    <TextView
+        android:id="@+id/data_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/name_list"
+        android:layout_alignTop="@+id/name_list"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:text=" 09/12/2014"/>
+    <TextView
+        android:id="@+id/valor_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_list"
+        android:layout_toLeftOf="@id/name_list"
+        android:layout_marginRight="29sp"
+        android:layout_alignParentRight="true"
+        android:text="R$ 250,00"
+        />
+
+</RelativeLayout>
